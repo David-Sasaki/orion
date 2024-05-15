@@ -1,6 +1,6 @@
 import { type FC, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Player } from "./PlayerAvatars";
+import Player from "./Player";
 import { useDispatch } from "react-redux";
 import { createBoard, updateBoard } from "../redux/actions/boardActions";
 import { createLog } from "../redux/actions/logActions";
