@@ -1,5 +1,4 @@
 import { createStore, combineReducers } from "redux";
-import { composeWithDevTools } from '@redux-devtools/extension';
 import { boardReducer } from "./reducers/boardReducer";
 import { logReducer } from "./reducers/logReducer";
 
@@ -8,7 +7,7 @@ const rootReducer = combineReducers({
     logReducer,
 });
 
-const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(rootReducer);
 
 export default store;
 export type AppState = ReturnType<typeof rootReducer>;
